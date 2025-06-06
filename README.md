@@ -131,13 +131,7 @@ Finally, the model’s performance is evaluated using **Hmmsearch**:
 hmmsearch -Z 1000 --max --tblout pos_1.out structural_model.hmm pos_1.fasta
 ```
 
----
 
-## Results
-
-All performance metrics, confusion matrices, and visualizations are saved in the `results/` folder.
-
----
 
 ## Author
 
