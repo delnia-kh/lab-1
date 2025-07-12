@@ -70,7 +70,7 @@ The IDs from the results file are then used to create a FASTA file:
 cat rcsb_pdb_custom_report.csv | tr -d '"' | awk -F ',' '{if (length($2)>0) {name=$2}; print name ,$3,$4,$5}' | grep PF00014 | awk '{print ">"$1"_"$3; print $2}' > pdb_kunitz_custom_reported.fasta
 ```
 
-Next, **CD-HIT** is used to cluster the sequences at a **90% identity threshold**:
+Next, **CD-HIT** is used to cluster the sequences:
 
 ```bash
 cd-hit -i pdb_kunitz_custom_reported.fasta -o pdb_kunitz_custom_reported.clstr -c 0.9
