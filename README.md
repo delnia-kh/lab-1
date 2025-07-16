@@ -131,7 +131,7 @@ Finally, the model’s performance is evaluated using **Hmmsearch**:
 hmmsearch -Z 1000 --max --tblout pos_1.out structural_model.hmm pos_1.fasta
 ```
 ### 7.results
-In this study, protein 1Y2D was identified as a **false negative** due to a high **e-value** of the Kunitz domain, which led to its incorrect detection by the model. The **quaternary structure** of 1Y2D, consisting of multiple subunits, added complexity to domain recognition. This was identified through performance evaluation using metrics like **PPV**, **MCC**, and **TPR**. The false negative occurred because the model could not accurately capture the interactions between the subunits and variations in the domain’s structure or sequence, resulting in misclassification.
+In this study, protein 1YlD was identified as a **false negative** due to a high **e-value** of the Kunitz domain, which led to its incorrect detection by the model. The **quaternary structure** of 1YlD, consisting of multiple subunits, added complexity to domain recognition. This was identified through performance evaluation using metrics like **PPV**, **MCC**, and **TPR**. The false negative occurred because the model could not accurately capture the interactions between the subunits and variations in the domain’s structure or sequence, resulting in misclassification.
 The final results are in the complete project report
 
 
